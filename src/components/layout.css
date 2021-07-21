@@ -590,6 +590,17 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+/* FORM STYLES */
+
+.form {
+  width: 500px;
+}
+
+.container {
+  padding: 20px;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
