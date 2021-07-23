@@ -7,10 +7,23 @@ export default class App extends Component {
     super(props)
 
     this.state = {
-      name: "",
-      age: "",
-      salary: "",
-      hobby: "",
+      date: "",
+      start_time: "",
+      end_time: "",
+      truck_registration: "",
+      driver_name: "",
+      odometer_reading: "",
+      pressure_reader: "",
+      tracking_no: "",
+      thread_depth: "",
+      brand: "",
+      replacement: "",
+      condition: "",
+      thread_pattern: "",
+      torque_wheel_nuts: "",
+      tyremovement_in_order: "",
+      tyre_used: "",
+      comments: "",
     }
   }
 
@@ -33,48 +46,195 @@ export default class App extends Component {
   }
 
   render() {
-    const { name, age, salary, hobby } = this.state
+    const {
+      date,
+      start_time,
+      end_time,
+      truck_registration,
+      driver_name,
+      odometer_reading,
+      pressure_reading,
+      tracking_no,
+      thread_depth,
+      brand,
+      replacement,
+      condition,
+      thread_pattern,
+      torque_wheel_nuts,
+      tyremovement_in_order,
+      tyre_used,
+      comments,
+    } = this.state
     return (
       <Container fluid className="container">
-        <Header as="h2">React Google Sheets!</Header>
         <Form className="form" onSubmit={this.submitHandler}>
           <Form.Field>
-            <label>Name</label>
+            <label>Date</label>
             <input
-              placeholder="Enter your name"
+              placeholder="Enter date"
+              type="date"
+              name="date"
+              value={date}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Start Time</label>
+            <input
+              placeholder="Select start time"
+              type="time"
+              name="start_time"
+              value={start_time}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>End Time</label>
+            <input
+              placeholder="Select end time"
+              type="time"
+              name="end_time"
+              value={end_time}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Truck Registration</label>
+            <input
+              placeholder="Enter registration"
               type="text"
-              name="name"
-              value={name}
+              name="truck_registration"
+              value={truck_registration}
               onChange={this.changeHandler}
             />
           </Form.Field>
           <Form.Field>
-            <label>Age</label>
+            <label>Driver Name</label>
             <input
-              placeholder="Enter your age"
-              type="number"
-              name="age"
-              value={age}
-              onChange={this.changeHandler}
-            />
-          </Form.Field>
-          <Form.Field>
-            <label>Salary</label>
-            <input
-              placeholder="Enter your salary"
-              type="number"
-              name="salary"
-              value={salary}
-              onChange={this.changeHandler}
-            />
-          </Form.Field>
-          <Form.Field>
-            <label>Hobby</label>
-            <input
-              placeholder="Enter your hobby"
+              placeholder="Enter driver name"
               type="text"
-              name="hobby"
-              value={hobby}
+              name="driver_name"
+              value={driver_name}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Odometer Reading</label>
+            <input
+              placeholder="Enter odometer reading"
+              type="text"
+              name="odometer_reading"
+              value={odometer_reading}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Pressure Reading</label>
+            <input
+              placeholder="Enter pressure reading"
+              type="text"
+              name="pressure_reading"
+              value={pressure_reading}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Tracking No.</label>
+            <input
+              placeholder="Enter tracking no."
+              type="text"
+              name="tracking_no"
+              value={tracking_no}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Thread Depth</label>
+            <input
+              placeholder="Enter thread depth"
+              type="text"
+              name="thread_depth"
+              value={thread_depth}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Brand</label>
+            <input
+              placeholder="Enter brand"
+              type="text"
+              name="brand"
+              value={brand}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Replacement</label>
+            <input
+              placeholder="Replacement, YES/NO?"
+              type="text"
+              name="replacement"
+              value={replacement}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Condition</label>
+            <input
+              placeholder="Enter condition"
+              type="text"
+              name="condition"
+              value={condition}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Thread Pattern</label>
+            <input
+              placeholder="Enter thread patterm"
+              type="text"
+              name="thread_pattern"
+              value={thread_pattern}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Torque Wheel Nuts</label>
+            <input
+              placeholder="Torque wheel nuts, YES/NO?"
+              type="text"
+              name="torque_wheel_nuts"
+              value={torque_wheel_nuts}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Tyre Movement In Order</label>
+            <input
+              placeholder="Enter tyre movement in order"
+              type="text"
+              name="tyremovement_in_order"
+              value={tyremovement_in_order}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Tyre Used</label>
+            <input
+              placeholder="What tyre was used?"
+              type="text"
+              name="tyre_used"
+              value={tyre_used}
+              onChange={this.changeHandler}
+            />
+          </Form.Field>
+          <Form.Field>
+            <label>Comments</label>
+            <input
+              placeholder="Enter registration"
+              type="text"
+              name="comments"
+              value={comments}
               onChange={this.changeHandler}
             />
           </Form.Field>
