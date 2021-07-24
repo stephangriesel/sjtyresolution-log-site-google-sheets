@@ -30,23 +30,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
-    {
-      resolve: "gatsby-plugin-favicons",
-      options: {
-        logo: "./src/favicon.svg",
-        appName: "SJ Tyre Solution",
-        background: "#fff",
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          yandex: false,
-          windows: false,
-        },
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
