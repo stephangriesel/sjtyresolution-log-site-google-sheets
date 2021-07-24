@@ -1,5 +1,9 @@
 import React, { Component } from "react"
-import { Button, Form, Container, Header } from "semantic-ui-react"
+import { Button } from "./common/Button"
+import { Form } from "./common/Form"
+import { Container } from "./common/Container"
+import { Input } from "./common/Input"
+
 import axios from "axios"
 
 export default class App extends Component {
@@ -68,176 +72,176 @@ export default class App extends Component {
     return (
       <Container fluid className="container">
         <Form className="form" onSubmit={this.submitHandler}>
-          <Form.Field>
+          <>
             <label>Date</label>
-            <input
+            <Input
               placeholder="Enter date"
               type="date"
               name="date"
               value={date}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Start Time</label>
-            <input
+            <Input
               placeholder="Select start time"
               type="time"
               name="start_time"
               value={start_time}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>End Time</label>
-            <input
+            <Input
               placeholder="Select end time"
               type="time"
               name="end_time"
               value={end_time}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Truck Registration</label>
-            <input
+            <Input
               placeholder="Enter registration"
               type="text"
               name="truck_registration"
               value={truck_registration}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Driver Name</label>
-            <input
+            <Input
               placeholder="Enter driver name"
               type="text"
               name="driver_name"
               value={driver_name}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Odometer Reading</label>
-            <input
+            <Input
               placeholder="Enter odometer reading"
               type="text"
               name="odometer_reading"
               value={odometer_reading}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Pressure Reading</label>
-            <input
+            <Input
               placeholder="Enter pressure reading"
               type="text"
               name="pressure_reading"
               value={pressure_reading}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Tracking No.</label>
-            <input
+            <Input
               placeholder="Enter tracking no."
               type="text"
               name="tracking_no"
               value={tracking_no}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Thread Depth</label>
-            <input
+            <Input
               placeholder="Enter thread depth"
               type="text"
               name="thread_depth"
               value={thread_depth}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Brand</label>
-            <input
+            <Input
               placeholder="Enter brand"
               type="text"
               name="brand"
               value={brand}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Replacement</label>
-            <input
+            <Input
               placeholder="Replacement, YES/NO?"
               type="text"
               name="replacement"
               value={replacement}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Condition</label>
-            <input
+            <Input
               placeholder="Enter condition"
               type="text"
               name="condition"
               value={condition}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Thread Pattern</label>
-            <input
+            <Input
               placeholder="Enter thread patterm"
               type="text"
               name="thread_pattern"
               value={thread_pattern}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Torque Wheel Nuts</label>
-            <input
+            <Input
               placeholder="Torque wheel nuts, YES/NO?"
               type="text"
               name="torque_wheel_nuts"
               value={torque_wheel_nuts}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Tyre Movement In Order</label>
-            <input
+            <Input
               placeholder="Enter tyre movement in order"
               type="text"
               name="tyremovement_in_order"
               value={tyremovement_in_order}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Tyre Used</label>
-            <input
+            <Input
               placeholder="What tyre was used?"
               type="text"
               name="tyre_used"
               value={tyre_used}
               onChange={this.changeHandler}
             />
-          </Form.Field>
-          <Form.Field>
+          </>
+          <>
             <label>Comments</label>
-            <input
+            <Input
               placeholder="Enter registration"
               type="text"
               name="comments"
               value={comments}
               onChange={this.changeHandler}
             />
-          </Form.Field>
+          </>
 
           <Button color="blue" type="submit">
             Submit
