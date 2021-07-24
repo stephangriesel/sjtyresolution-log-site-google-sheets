@@ -46,6 +46,7 @@ export default class App extends Component {
       )
       .then(response => {
         console.log(response)
+        window.location = "/success"
       })
   }
 
@@ -235,7 +236,7 @@ export default class App extends Component {
           <>
             <label>Comments</label>
             <Input
-              placeholder="Enter registration"
+              placeholder="Additional Comments"
               type="text"
               name="comments"
               value={comments}

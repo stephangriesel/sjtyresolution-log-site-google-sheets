@@ -1,6 +1,5 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
@@ -23,7 +22,7 @@ const Header = ({ siteTitle }) => (
         width={200}
         quality={95}
         formats={["AUTO", "WEBP", "AVIF"]}
-        alt="A Gatsby astronaut"
+        alt="Logo"
         style={{ marginBottom: `1.45rem` }}
       />
     </div>

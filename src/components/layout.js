@@ -33,11 +33,14 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
+          textAlign: `center`,
         }}
       >
         <main>{children}</main>
         <footer
           style={{
+            display: `flex`,
+            justifyContent: `center`,
             marginTop: `2rem`,
           }}
         >
