@@ -143,7 +143,7 @@ export default class App extends Component {
             <label>Pressure Reading</label>
             <Input
               placeholder="Enter pressure reading"
-              type="text"
+              type="number"
               name="pressure_reading"
               value={pressure_reading}
               onChange={this.changeHandler}
@@ -165,7 +165,7 @@ export default class App extends Component {
             <label>Thread Depth</label>
             <Input
               placeholder="Enter thread depth"
-              type="text"
+              type="number"
               name="thread_depth"
               value={thread_depth}
               onChange={this.changeHandler}
