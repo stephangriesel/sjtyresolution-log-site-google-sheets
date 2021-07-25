@@ -3,6 +3,7 @@ import { Button } from "./common/Button"
 import { Form } from "./common/Form"
 import { Container } from "./common/Container"
 import { Input } from "./common/Input"
+import { Select } from "./common/Select"
 
 import axios from "axios"
 
@@ -12,6 +13,8 @@ export default class App extends Component {
 
     this.state = {
       date: "",
+      tyre_position: "",
+      truck_trailer: "",
       start_time: "",
       end_time: "",
       truck_registration: "",
@@ -53,6 +56,8 @@ export default class App extends Component {
   render() {
     const {
       date,
+      tyre_position,
+      truck_trailer,
       start_time,
       end_time,
       truck_registration,
@@ -83,6 +88,25 @@ export default class App extends Component {
               onChange={this.changeHandler}
               required
             />
+          </>
+          <>
+            <label>Tyre Position</label>
+            <Input
+              placeholder="Tyre Position"
+              type="number"
+              name="tyre_position"
+              value={tyre_position}
+              onChange={this.changeHandler}
+              required
+            />
+          </>
+          <>
+            <label>Truck or Trailer</label>
+            <Select name="truck_trailer" onChange={this.changeHandler} required>
+              <option>--Make selection--</option>
+              <option value="Truck">Truck</option>
+              <option value="Trailer">Trailer</option>
+            </Select>
           </>
           <>
             <label>Start Time</label>
@@ -185,14 +209,11 @@ export default class App extends Component {
           </>
           <>
             <label>Replacement</label>
-            <Input
-              placeholder="YES/NO?"
-              type="text"
-              name="replacement"
-              value={replacement}
-              onChange={this.changeHandler}
-              required
-            />
+            <Select name="replacement" onChange={this.changeHandler} required>
+              <option>--YES/NO?--</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </Select>
           </>
           <>
             <label>Condition</label>
@@ -218,14 +239,15 @@ export default class App extends Component {
           </>
           <>
             <label>Torque Wheel Nuts</label>
-            <Input
-              placeholder="YES/NO?"
-              type="text"
+            <Select
               name="torque_wheel_nuts"
-              value={torque_wheel_nuts}
               onChange={this.changeHandler}
               required
-            />
+            >
+              <option>--YES/NO?--</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </Select>
           </>
           <>
             <label>Tyre Movement In Order</label>
