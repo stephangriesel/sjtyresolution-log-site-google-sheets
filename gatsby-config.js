@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `SJ Tyre Solution`,
         short_name: `SJ Tyre Solution`,
         start_url: `/`,
         background_color: `#FFFFFF`,

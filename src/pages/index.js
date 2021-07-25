@@ -1,5 +1,7 @@
 import * as React from "react"
 import Layout from "../components/layout"
+import { Link } from "gatsby"
+import { Button } from "../components/common/Button"
 
 const IndexPage = () => (
   <Layout>
@@ -11,6 +13,9 @@ const IndexPage = () => (
     >
       Welcome!
     </h1>
+    <Link to="/log/">
+      <Button>Log Form</Button>
+    </Link>{" "}
     <br />
   </Layout>
 )
