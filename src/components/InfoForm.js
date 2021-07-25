@@ -81,6 +81,7 @@ export default class App extends Component {
               name="date"
               value={date}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -91,6 +92,7 @@ export default class App extends Component {
               name="start_time"
               value={start_time}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -101,6 +103,7 @@ export default class App extends Component {
               name="end_time"
               value={end_time}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -111,6 +114,7 @@ export default class App extends Component {
               name="truck_registration"
               value={truck_registration}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -121,16 +125,18 @@ export default class App extends Component {
               name="driver_name"
               value={driver_name}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
             <label>Odometer Reading</label>
             <Input
               placeholder="Enter odometer reading"
-              type="text"
+              type="number"
               name="odometer_reading"
               value={odometer_reading}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -141,6 +147,7 @@ export default class App extends Component {
               name="pressure_reading"
               value={pressure_reading}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -151,6 +158,7 @@ export default class App extends Component {
               name="tracking_no"
               value={tracking_no}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -161,6 +169,7 @@ export default class App extends Component {
               name="thread_depth"
               value={thread_depth}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -171,16 +180,18 @@ export default class App extends Component {
               name="brand"
               value={brand}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
             <label>Replacement</label>
             <Input
-              placeholder="Replacement, YES/NO?"
+              placeholder="YES/NO?"
               type="text"
               name="replacement"
               value={replacement}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -191,6 +202,7 @@ export default class App extends Component {
               name="condition"
               value={condition}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -201,16 +213,18 @@ export default class App extends Component {
               name="thread_pattern"
               value={thread_pattern}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
             <label>Torque Wheel Nuts</label>
             <Input
-              placeholder="Torque wheel nuts, YES/NO?"
+              placeholder="YES/NO?"
               type="text"
               name="torque_wheel_nuts"
               value={torque_wheel_nuts}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -221,6 +235,7 @@ export default class App extends Component {
               name="tyremovement_in_order"
               value={tyremovement_in_order}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -231,6 +246,7 @@ export default class App extends Component {
               name="tyre_used"
               value={tyre_used}
               onChange={this.changeHandler}
+              required
             />
           </>
           <>
@@ -244,9 +260,7 @@ export default class App extends Component {
             />
           </>
 
-          <Button color="blue" type="submit">
-            Submit
-          </Button>
+          <Button type="submit">Submit</Button>
         </Form>
       </Container>
     )
