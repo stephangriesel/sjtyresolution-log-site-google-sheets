@@ -1,11 +1,11 @@
 import * as React from "react"
 import Layout from "../components/layout"
-// import Seo from "../components/seo"
+import Seo from "../components/seo"
 import InfoForm from "../components/InfoForm"
 
 const Log = () => (
   <Layout>
-    {/* <Seo title="Page two" /> */}
+    <Seo title="SJ Tyre Solution - Logging" />
     <InfoForm />
   </Layout>
 )
